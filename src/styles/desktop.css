@@ -5,16 +5,34 @@
     padding: 60px 20px;
 }
 
-/* Hero Section */
+
+/* Hero Section - Full width background */
 .hero-section {
+    background: linear-gradient(
+            to right, 
+            rgba(11, 15, 25, 0.95) 0%, 
+            rgba(11, 15, 25, 0.8) 50%, 
+            rgba(11, 15, 25, 0.4) 100%
+        ),
+        url('../images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin: 0;
+}
+
+/* Hero Inner Grid - Centers content and creates 2 columns */
+.hero-inner-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 50px;
     align-items: center;
-    min-height: 80vh;
-    padding: 40px 0;
+    min-height: 85vh;
+    padding: 80px 20px;
 }
-
 .badge {
     display: inline-block;
     padding: 6px 14px;
