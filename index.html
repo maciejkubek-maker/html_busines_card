@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Od CNC do Danych | Portfolio </title>
+    <link rel="stylesheet" href="src/styles/main.css">
+    <link rel="stylesheet" href="src/styles/desktop.css" media="(min-width: 768px)">
+    <link rel="stylesheet" href="src/styles/mobile.css" media="(max-width: 767px)">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Mobile Header / Hamburger Toggle -->
+    <header class="mobile-nav-bar">
+        <div class="logo">CNC ➔ DATA</div>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+    <nav class="mobile-menu" id="mobileMenu">
+        <a href="#hero">Start</a>
+        <a href="#about">Transformacja</a>
+        <a href="#skills">Umiejętności</a>
+        <a href="#projects">Projekty</a>
+        <a href="#contact">Kontakt</a>
+    </nav>
+
+    <main class="main-container">
+        <!-- HERO SECTION -->
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <div class="badge">CNC ➔ Data Analyst & Python Dev</div>
+                <h1>Od precyzji CNC<br>do potęgi danych.</h1>
+                <p class="hero-subtitle">Przez ponad 10 lat optymalizowałem procesy produkcyjne w kodzie G-code. Teraz przekuwam inżynieryjne doświadczenie w zaawansowaną analizę danych i czysty kod Pythona.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Skontaktuj się</a>
+                    <a href="#projects" class="btn btn-outline">Zobacz Projekty</a>
+                </div>
+            </div>
+            <div class="hero-card-visual">
+                <div class="terminal-box">
+                    <div class="terminal-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="terminal-title">transformation.py</span>
+                    </div>
+                    <pre><code><span class="keyword">class</span> <span class="title">Engineer</span>:
+    <span class="keyword">def</span> <span class="title">__init__</span>(<span class="params">self</span>):
+        self.background = <span class="string">"CNC & Manufacturing"</span>
+        self.target = <span class="string">"Data Analyst / Python Dev"</span>
+        self.precision = <span class="number">99.9</span>
+
+    <span class="keyword">def</span> <span class="title">analyze</span>(<span class="params">self, data</span>):
+        <span class="keyword">return</span> data.optimize().insights()</code></pre>
+                </div>
+                <div class="profile-pill">
+                    <div class="avatar-placeholder"></div>
+                    <div class="profile-info">
+                        <strong>Inżynier w drodze do IT</strong>
+                        <span>Analityczne podejście & Samodoskonalenie</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT / TRANSFORMATION SECTION -->
+        <section id="about" class="about-section">
+            <div class="section-header">
+                <h2>Transformacja Inżynieryjna</h2>
+                <p>Dlaczego ktoś po CNC radzi sobie świetnie w bazach danych i Pythonie?</p>
+            </div>
+            <div class="comparison-grid">
+                <div class="comp-card cnc-side">
+                    <div class="comp-icon">⚙️</div>
+                    <h3>Przeszłość: CNC & Produkcja</h3>
+                    <ul class="comp-list">
+                        <li><strong>Optymalizacja kodu G-code:</strong> Skracanie cykli obróbki o każdy ułamek sekundy.</li>
+                        <li><strong>Czytanie dokumentacji:</strong> Analiza złożonych rysunków technicznych i tolerancji.</li>
+                        <li><strong>Kontrola jakości:</strong> Natychmiastowe wykrywanie anomalii i odchyłek od normy.</li>
+                        <li><strong>Odporność na stres:</strong> Praca pod presją czasu przy drogich komponentach.</li>
+                    </ul>
+                </div>
+                <div class="arrow-bridge">➔</div>
+                <div class="comp-card data-side">
+                    <div class="comp-icon">📊</div>
+                    <h3>Przyszłość: Data & Python</h3>
+                    <ul class="comp-list">
+                        <li><strong>Optymalizacja algorytmów:</strong> Pisanie wydajnego kodu w Pythonie i zapytań SQL.</li>
+                        <li><strong>Modelowanie danych:</strong> Przekładanie relacji biznesowych na tablicowe struktury.</li>
+                        <li><strong>Data Cleaning:</strong> Wykrywanie outlierów, braków danych i walidacja w Pandas.</li>
+                        <li><strong>Automatyzacja:</strong> Zastępowanie powtarzalnych zadań skryptami i dashboardami.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS / TECH STACK -->
+        <section id="skills" class="skills-section">
+            <div class="section-header">
+                <h2>Stack Technologiczny</h2>
+                <p>Narzędzia, które opanowałem i wykorzystuję w codziennej pracy analitycznej oraz programistycznej.</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Data Analysis</h3>
+                    <div class="skill-chips">
+                        <span class="chip">Python (Pandas, NumPy)</span>
+                        <span class="chip">SQL / PostgreSQL</span>
+                        <span class="chip">Power BI & Dashboarding</span>
+                        <span class="chip">Matplotlib / Seaborn</span>
+                        <span class="chip">Excel Zaawansowany</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Python Dev</h3>
+                    <div class="skill-chips">
+                        <span class="chip">FastAPI / Flask (Podstawy)</span>
+                        <span class="chip">Git & GitHub</span>
+                        <span class="chip">REST APIs</span>
+                        <span class="chip">Automatyzacja zadań (Scripts)</span>
+                        <span class="chip">OOP & Algorytmy</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Inżynieria & Metodyka</h3>
+                    <div class="skill-chips">
+                        <span class="chip">Analityczne myślenie</span>
+                        <span class="chip">Optymalizacja procesów</span>
+                        <span class="chip">Dokumentacja techniczna</span>
+                        <span class="chip">Rozwiązywanie problemów</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS PORTFOLIO -->
+        <section id="projects" class="projects-section">
+            <div class="section-header">
+                <h2>Projekty Portfolio</h2>
+                <p>Wybrane realizacje łączące automatyzację, analitykę i programowanie.</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-tag">Python • Pandas</div>
+                    <h3>Automatyzacja Raportów Produkcyjnych</h3>
+                    <p>Skrypt w Pythonie parsujący tysiące linii surowych danych maszynowych, czyszczący anomalia i generujący gotowy raport podsumowujący KPI dla zarządu.</p>
+                    <div class="project-links">
+                        <a href="https://github.com" target="_blank" class="project-link">GitHub ↗</a>
+                        <a href="#" class="project-link demo">Live Demo</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-tag">Power BI • SQL</div>
+                    <h3>Dashboard Efektywności i Przestojów (OEE)</h3>
+                    <p>Interaktywny pulpit menedżerski wizualizujący w czasie rzeczywistym wskaźnik OEE, przyczyny przestojów oraz efektywność operatorów.</p>
+                    <div class="project-links">
+                        <a href="https://github.com" target="_blank" class="project-link">GitHub ↗</a>
+                        <a href="#" class="project-link demo">Podgląd</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-tag">Python • SQLite • FastAPI</div>
+                    <h3>API do Zarządzania Zasobami Magazynowymi</h3>
+                    <p>Lekka aplikacja backendowa umożliwiająca śledzenie stanów magazynowych narzędzi skrawających i komponentów z pełną obsługą zapytań CRUD.</p>
+                    <div class="project-links">
+                        <a href="https://github.com" target="_blank" class="project-link">GitHub ↗</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-tag">Python • Machine Learning</div>
+                    <h3>Predykcja Awarii Maszyn (Maintenance)</h3>
+                    <p>Model uczenia maszynowego (Random Forest) przewidujący potencjalne awarie wrzeciona na podstawie danych o wibracjach i temperaturze.</p>
+                    <div class="project-links">
+                        <a href="https://github.com" target="_blank" class="project-link">GitHub ↗</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="contact-section">
+            <div class="contact-container">
+                <div class="contact-text">
+                    <h2>Porozmawiajmy o współpracy</h2>
+                    <p>Szukasz sumiennego analityka danych lub młodszego programisty Pythona z unikalnym zacięciem inżynieryjnym? Napisz do mnie!</p>
+                    <div class="contact-details">
+                        <span>✉️ kontakt@twojadomena.pl</span>
+                        <span>📍 Polska / Zdalnie</span>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm" onsubmit="event.preventDefault(); alert('Wiadomość wysłana pomyślnie!');">
+                    <div class="form-group">
+                        <label for="name">Imię / Firma</label>
+                        <input type="text" id="name" required placeholder="Twoje imię">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Adres E-mail</label>
+                        <input type="email" id="email" required placeholder="nazwa@firma.pl">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Wiadomość</label>
+                        <textarea id="message" rows="4" required placeholder="Napisz w jakiej sprawie się kontaktujesz..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Wyślij wiadomość</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 • Przebranżowienie CNC ➔ Data Analyst & Python Dev. Wszelkie prawa zastrzeżone.</p>
+            <div class="socials">
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                <a href="https://github.com" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="src/js/main.js"></script>
+</body>
+</html>

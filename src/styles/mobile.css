@@ -1,0 +1,102 @@
+/* Mobile Specific Layout (<767px) */
+.mobile-nav-bar {
+    display: flex;
+}
+
+.main-container {
+    padding: 80px 16px 40px 16px;
+}
+
+/* Hero Section Mobile */
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px 0;
+    min-height: auto;
+}
+
+.hero-content h1 {
+    font-size: 2.2rem;
+}
+
+.hero-subtitle {
+    font-size: 1rem;
+}
+
+.hero-buttons {
+    flex-direction: column;
+}
+
+.hero-card-visual {
+    width: 100%;
+}
+
+.profile-pill {
+    position: static;
+    margin-top: 15px;
+    width: 100%;
+}
+
+/* Transformation / About Mobile */
+.about-section {
+    padding: 50px 0;
+}
+
+.comparison-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.arrow-bridge {
+    transform: rotate(90deg);
+    margin: 10px 0;
+}
+
+.comp-card {
+    padding: 25px;
+}
+
+/* Skills Section Mobile */
+.skills-section {
+    padding: 50px 0;
+}
+
+.skills-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Projects Section Mobile */
+.projects-section {
+    padding: 50px 0;
+}
+
+.projects-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.project-card {
+    padding: 25px;
+}
+
+/* Contact Section Mobile */
+.contact-section {
+    padding: 40px 0 60px 0;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    gap: 30px;
+}
+
+.footer-content {
+    flex-direction: column;
+    text-align: center;
+}
