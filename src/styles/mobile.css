@@ -1,4 +1,6 @@
-/* Mobile Specific Layout (<768px) */
+/* ================================================================= */
+/* Mobile Specific Layout (<768px) - Final Clean Fix                 */
+/* ================================================================= */
 
 .mobile-nav-bar {
     display: flex;
@@ -13,7 +15,7 @@
 .hero-section {
     display: flex;
     flex-direction: column;
-    padding: 70px 16px 40px 16px;
+    padding: 85px 16px 50px 16px;
     width: 100%;
     background: linear-gradient(
             to bottom, 
@@ -32,35 +34,44 @@
     padding: 0;
 }
 
+/* PRZENIESIENIE I STYLIZACJA: Boks profilu z awatarem u góry */
 .hero-profile-box {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 12px;
-    background: rgba(19, 27, 46, 0.9);
-    border: 1px solid var(--card-border);
-    padding: 8px 14px 8px 8px;
-    border-radius: 40px;
+    text-align: center;
+    background: rgba(19, 27, 46, 0.85);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(56, 189, 248, 0.3);
+    padding: 20px;
+    border-radius: 20px;
     width: 100%;
+    margin-bottom: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     box-sizing: border-box;
+    order: -1; /* Wymuszenie pojawienia się na samym początku sekcji */
 }
 
 .hero-avatar-large {
-    width: 50px;
-    height: 50px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
     object-fit: cover;
     object-position: center top;
-    border: 2px solid var(--accent-blue);
+    border: 3px solid var(--accent-blue);
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
+    margin-bottom: 12px;
 }
 
 .hero-profile-text strong {
     display: block;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     color: var(--text-main);
+    margin-bottom: 4px;
 }
 
 .hero-profile-text span {
-    font-size: 0.75rem;
+    font-size: 0.85rem;
     color: var(--text-muted);
 }
 
@@ -87,6 +98,11 @@
     width: 100%;
     text-align: center;
     padding: 10px 20px;
+}
+
+/* CAŁKOWITE USUNIĘCIE STAREGO TERMINALA Z DOŁU */
+.hero-card-visual {
+    display: none !important;
 }
 
 /* Global Sections Mobile Background & Proper Scaling */
@@ -139,30 +155,11 @@
     font-size: 2rem;
 }
 
-.comp-card {
-    padding: 20px;
-    border-radius: 12px;
-}
-
-.comp-card h3 {
-    font-size: 1.2rem;
-}
-
-.comp-list li {
-    font-size: 0.9rem;
-    margin-bottom: 10px;
-}
-
 /* Skills Section */
 .skills-grid {
     display: flex;
     flex-direction: column;
     gap: 20px;
-}
-
-.skill-category {
-    padding: 20px;
-    border-radius: 12px;
 }
 
 /* Projects Section */
@@ -172,22 +169,44 @@
     gap: 20px;
 }
 
-.project-card {
-    padding: 20px;
-    border-radius: 12px;
+/* Karty w sekcjach mobilnych (wspólne style) */
+.comp-card,
+.skill-category,
+.project-card,
+.contact-container {
+    background: rgba(19, 27, 46, 0.75); /* Półprzezroczyste tło */
+    backdrop-filter: blur(12px);         /* Efekt rozmycia tła pod kartą */
+    -webkit-backdrop-filter: blur(12px); /* Wsparcie dla przeglądarki Safari */
+    border: 1px solid rgba(56, 189, 248, 0.2); /* Delikatna, spójna ramka */
+    border-radius: 16px;
+    padding: 24px 20px;
+    box-sizing: border-box;
+    width: 100%;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3); /* Dodatkowa głębia */
 }
 
+.comp-card h3,
 .project-card h3 {
     font-size: 1.2rem;
+}
+
+.comp-list li {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+/* Korekta wyglądu tekstu wewnątrz kart w Stacku */
+.skill-category .skill-chips, 
+.skill-category p,
+.comp-card ul {
+    margin-top: 12px;
 }
 
 /* Contact Section */
 .contact-container {
     display: flex;
     flex-direction: column;
-    padding: 20px;
     gap: 25px;
-    border-radius: 16px;
 }
 
 .contact-text h2 {
@@ -195,6 +214,8 @@
 }
 
 .contact-form {
+    display: flex;
+    flex-direction: column;
     gap: 15px;
 }
 
@@ -204,23 +225,4 @@
     text-align: center;
     gap: 15px;
     padding: 20px 16px;
-}
-/* Przywrócenie i stylizacja kart w sekcjach mobilnych */
-.comp-card,
-.skill-category,
-.project-card,
-.contact-container {
-    background: var(--card-bg, #131b2e);
-    border: 1px solid var(--card-border, rgba(255, 255, 255, 0.1));
-    border-radius: 16px;
-    padding: 24px 20px;
-    box-sizing: border-box;
-    width: 100%;
-}
-
-/* Korekta wyglądu tekstu wewnątrz kart w Stacku */
-.skill-category .skill-chips, 
-.skill-category p,
-.comp-card ul {
-    margin-top: 12px;
 }
