@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt 1: Cyfryzacja i Automatyzacja Kosztów Narzędziowych CPP (Smart Factory) | Maciej Kubiak</title>
+    <link rel="stylesheet" href="../src/styles/main.css">
+    <link rel="stylesheet" href="../src/styles/desktop.css" media="(min-width: 768px)">
+    <link rel="stylesheet" href="../src/styles/mobile.css" media="(max-width: 767px)">
+    <link rel="stylesheet" href="../src/styles/projects.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Mobile Header -->
+    <header class="mobile-nav-bar">
+        <div class="logo">CNC ➔ DATA</div>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+    <nav class="mobile-menu" id="mobileMenu">
+        <a href="../index.html#hero">Start</a>
+        <a href="../index.html#about">Transformacja</a>
+        <a href="../index.html#skills">Umiejętności</a>
+        <a href="../index.html#projects">Projekty</a>
+        <a href="../index.html#contact">Kontakt</a>
+    </nav>
+
+    <main class="main-container">
+        <section class="project-detail-section">
+            <div class="project-inner-container">
+                <a href="../index.html#projects" class="back-link">← Wróć do portfolio</a>
+                
+                <div class="project-layout">
+                    <!-- LEWA STRONA: Tekst, Opis, Rezultaty -->
+                    <div class="project-text-column">
+                        <span class="project-meta-tag">Power BI • DAX • Power Automate • Lean / Automotive</span>
+                        <h1>Cyfryzacja i Optymalizacja Kosztów Narzędziowych (CPP) w Automotive</h1>
+                        
+                        <p>
+                            Autorski projekt wdrożony w branży automotive (2025–2026), odpowiadający na kluczowe wyzwanie: <strong>gdzie faktycznie powstają ukryte straty i jak systemowo je ograniczać?</strong> Tradycyjne raportowanie oparte na rozproszonych plikach Excel zastąpiono w pełni zautomatyzowanym ekosystemem analitycznym o wysokim ROI.
+                        </p>
+
+                        <div class="metrics-grid">
+                            <div class="metric-card">
+                                <div class="metric-value">↓ 20%</div>
+                                <div class="metric-label">Redukcja CPP</div>
+                            </div>
+                            <div class="metric-card">
+                                <div class="metric-value">5 min</div>
+                                <div class="metric-label">Czas raportowania (zamiast 5h)</div>
+                            </div>
+                        </div>
+
+                        <h3>Wyzwanie inżynieryjne i stan wyjściowy</h3>
+                        <p>
+                            W procesach obróbki CNC kluczowym wyzwaniem była kontrola kosztów narzędziowych w przeliczeniu na detal (<b>CPP – Cost Per Part</b>). Stan wyjściowy charakteryzował się wysoką pracochłonnością: technolog ręcznie przepisywał koszty i dane narzędziowe z szaf, a tradycyjne przygotowanie cyklicznych analiz zajmowało od 2 do 5 godzin manualnego zbierania danych z rozproszonych plików Excel i dysków lokalnych. Brak zintegrowanego systemu generował ryzyko błędów ludzkich i uniemożliwiał bieżącą reakcję na anomalie kosztowe.
+                        </p>
+
+                        <h3>Architektura rozwiązania i stos technologiczny</h3>
+                        <ul>
+                            <li><strong>Power BI Dashboard:</strong> Integracja 6 źródeł danych, stworzenie ponad 20 miar DAX oraz kilkunastu kolumn obliczeniowych dla precyzyjnego śledzenia CPP w ujęciu tygodniowym i rocznym.</li>
+                            <li><strong>Ewolucja i prezentacja raportu:</strong> Ze względu na poufność danych konstrukcyjnych, design raportu ewoluował z czasem, a publikowane materiały obejmują wyłącznie bezpieczne screeny poglądowe. Gotowy dashboard regularnie trafiał na spotkania <i>high managementu</i> jako kluczowe narzędzie wspierające decyzje zarządzace.</li>
+                            <li><strong>Power Automate (Online & Desktop / RPA):</strong> Automatyczny odbiór wiadomości e-mail z szaf narzędziowych i porządkowanie załączników w chmurze. Ponadto dedykowany robot RPA omija ograniczenia dysków sieciowych – automatycznie uruchamia Power BI, zaciąga dane lokalne, wymusza odświeżenie modelu i publikację raportu bez ingerencji człowieka.</li>
+                        </ul>
+
+                        <h3>Rezultaty biznesowe</h3>
+                        <p>
+                            Wdrożenie 100% potencjału dostępnych narzędzi wyeliminowało błędy ludzkie, drastycznie skróciło czas przygotowania raportów zarządczych (z 5 godzin do 5 minut) i udowodniło, że podejście <em>data-driven</em> połączone z automatyzacją przynosi najwyższy zwrot z inwestycji (ROI) w nowoczesnej produkcji.
+                        </p>
+
+                        <!-- <div class="project-actions">
+                            <a href="https://github.com" target="_blank" class="btn btn-primary">Zobacz kod na GitHub ↗</a>
+                            <a href="#" class="btn btn-outline">Live Demo</a>
+                        </div> -->
+                    </div>
+
+                    <!-- PRAWA STRONA: Wszystkich 5 wizualizacji i diagramów -->
+                    <div class="project-images-column">
+                        <div class="project-img-card">
+                            <img src="../src/images/proj1_1.png" alt="Smart Factory CPP Report Dashboard">
+                            <div class="img-caption">Rys. 1: Smart Factory CPP Report – główny panel analityczny Power BI monitorujący koszty i wolumeny w projektach.</div>
+                        </div>
+                        
+                        <div class="project-img-card">
+                            <img src="../src/images/proj1_2.jpg" alt="Top Tool Costs Last Week">
+                            <div class="img-caption">Rys. 2: Zestawienie Top Tool Costs – szybka identyfikacja najbardziej kosztownych pozycji i budżetu YTD.</div>
+                        </div>
+
+                        <div class="project-img-card">
+                            <img src="../src/images/proj1_3.jpg" alt="Tool by Week i analiza trendów">
+                            <div class="img-caption">Rys. 3: Analiza zużycia narzędzi w ujęciu tygodniowym z wykorzystaniem filtrów i miar DAX.</div>
+                        </div>
+
+                        <div class="project-img-card">
+                            <img src="../src/images/proj1_4.jpg" alt="Power Automate Desktop Flow">
+                            <div class="img-caption">Rys. 4: Przepływ roboczy Power Automate Desktop (RPA) – automatyczne odświeżanie i publikacja raportów.</div>
+                        </div>
+
+                        <!-- <div class="project-img-card">
+                            <img src="../src/images/proj1_5.jpg" alt="Power Automate Cloud Flow">
+                            <div class="img-caption">Rys. 5: Chmurowy obieg dokumentacji i powiadomień (Outlook + SharePoint + powiadomienia mailowe).</div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 • Przebranżowienie CNC ➔ Data Analyst & Python Dev. Wszelkie prawa zastrzeżone.</p>
+            <div class="socials">
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                <a href="https://github.com" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../src/js/main.js"></script>
+    
+    <!-- Okno modalne do podglądu zdjęć -->
+    <div id="imageModal" class="image-modal" onclick="closeModal()">
+        <span class="modal-close">&times;</span>
+        <img class="modal-content" id="modalImg" alt="Powiększony podgląd">
+    </div>
+</body>
+</html>

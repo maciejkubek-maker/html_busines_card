@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Tytuł Projektu] | Maciej Kubiak</title>
+    <link rel="stylesheet" href="../src/styles/main.css">
+    <link rel="stylesheet" href="../src/styles/desktop.css" media="(min-width: 768px)">
+    <link rel="stylesheet" href="../src/styles/mobile.css" media="(max-width: 767px)">
+    <link rel="stylesheet" href="../src/styles/projects.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Mobile Header -->
+    <header class="mobile-nav-bar">
+        <div class="logo">CNC ➔ DATA</div>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+    <nav class="mobile-menu" id="mobileMenu">
+        <a href="../index.html#hero">Start</a>
+        <a href="../index.html#about">Transformacja</a>
+        <a href="../index.html#skills">Umiejętności</a>
+        <a href="../index.html#projects">Projekty</a>
+        <a href="../index.html#contact">Kontakt</a>
+    </nav>
+
+    <main class="main-container">
+        <section class="project-detail-section">
+            <div class="project-inner-container">
+                <a href="../index.html#projects" class="back-link">← Wróć do portfolio</a>
+                
+                <div class="project-layout">
+                    <!-- LEWA STRONA: Tekst, Opis, Rezultaty -->
+                    <div class="project-text-column">
+                        <span class="project-meta-tag">[Technologie • Narzędzia • Stack]</span>
+                        <h1>[Tytuł Projektu – Główny Nagłówek]</h1>
+                        
+                        <p>
+                            [Krótkie podsumowanie i wstęp do projektu, odpowiadające na kluczowe pytanie biznesowe lub inżynieryjne.]
+                        </p>
+
+                        <div class="metrics-grid">
+                            <div class="metric-card">
+                                <div class="metric-value">[Wartość 1]</div>
+                                <div class="metric-label">[Opis metryki 1]</div>
+                            </div>
+                            <div class="metric-card">
+                                <div class="metric-value">[Wartość 2]</div>
+                                <div class="metric-label">[Opis metryki 2]</div>
+                            </div>
+                        </div>
+
+                        <h3>Wyzwanie i stan wyjściowy</h3>
+                        <p>
+                            [Szczegółowy opis problemu, z którym trzeba było się zmierzyć, oraz wyjściowych warunków biznesowych lub technicznych.]
+                        </p>
+
+                        <h3>Architektura rozwiązania i stos technologiczny</h3>
+                        <ul>
+                            <li><strong>[Komponent 1]:</strong> [Opis działania, użytych bibliotek, podejścia analitycznego.]</li>
+                            <li><strong>[Komponent 2]:</strong> [Opis integracji, przetwarzania danych lub automatyzacji.]</li>
+                            <li><strong>[Komponent 3]:</strong> [Opis wizualizacji, wdrożenia lub efektu końcowego dla użytkownika.]</li>
+                        </ul>
+
+                        <h3>Rezultaty biznesowe</h3>
+                        <p>
+                            [Podsumowanie wymiernych korzyści, oszczędności czasu, finansowych oraz usprawnień procesowych wynikających z wdrożenia projektu.]
+                        </p>
+
+                        <div class="project-actions">
+                            <a href="https://github.com" target="_blank" class="btn btn-primary">Zobacz kod na GitHub ↗</a>
+                            <a href="#" class="btn btn-outline">Live Demo</a>
+                        </div>
+                    </div>
+
+                    <!-- PRAWA STRONA: Wizualizacje i diagramy -->
+                    <div class="project-images-column">
+                        <div class="project-img-card">
+                            <img src="../src/images/placeholder_1.png" alt="Wizualizacja projektu 1">
+                            <div class="img-caption">Rys. 1: [Opis pierwszej wizualizacji lub panelu].</div>
+                        </div>
+                        
+                        <div class="project-img-card">
+                            <img src="../src/images/placeholder_2.jpg" alt="Wizualizacja projektu 2">
+                            <div class="img-caption">Rys. 2: [Opis drugiej wizualizacji, wykresu lub schematu].</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 • Przebranżowienie CNC ➔ Data Analyst & Python Dev. Wszelkie prawa zastrzeżone.</p>
+            <div class="socials">
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                <a href="https://github.com" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../src/js/main.js"></script>
+</body>
+</html>
