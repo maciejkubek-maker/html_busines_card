@@ -2,13 +2,28 @@
 /* Mobile Specific Layout (<768px) - Final Clean Fix                 */
 /* ================================================================= */
 
+/* Globalna poprawka zapobiegająca wychodzeniu elementów poza ekran */
+*, *::before, *::after {
+    box-sizing: border-box !important;
+}
+
+body {
+    overflow-x: hidden !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
 .mobile-nav-bar {
     display: flex;
 }
 
 .main-container {
-    padding: 0;
-    max-width: 100%;
+    padding: 0 16px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
 }
 
 /* Hero Section Mobile */
@@ -17,6 +32,9 @@
     flex-direction: column;
     padding: 85px 16px 50px 16px;
     width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
     background: linear-gradient(
             to bottom, 
             rgba(11, 15, 25, 0.95) 0%, 
@@ -32,9 +50,12 @@
     flex-direction: column;
     gap: 20px;
     padding: 0;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
-/* PRZENIESIENIE I STYLIZACJA: Boks profilu z awatarem u góry */
+/* Boks profilu z awatarem u góry */
 .hero-profile-box {
     display: flex;
     flex-direction: column;
@@ -46,10 +67,11 @@
     padding: 20px;
     border-radius: 20px;
     width: 100%;
+    max-width: 100%;
     margin-bottom: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     box-sizing: border-box;
-    order: -1; /* Wymuszenie pojawienia się na samym początku sekcji */
+    order: -1;
 }
 
 .hero-avatar-large {
@@ -92,6 +114,7 @@
     flex-direction: column;
     gap: 10px;
     width: 100%;
+    max-width: 100%;
 }
 
 .hero-buttons .btn {
@@ -100,7 +123,7 @@
     padding: 10px 20px;
 }
 
-/* CAŁKOWITE USUNIĘCIE STAREGO TERMINALA Z DOŁU */
+/* Usunięcie starego terminala z dołu */
 .hero-card-visual {
     display: none !important;
 }
@@ -108,11 +131,32 @@
 /* Global Sections Mobile Background & Proper Scaling */
 .about-section,
 .skills-section,
-.projects-section,
-.contact-section {
-    padding: 60px 16px;
+.projects-section {
+    padding: 60px 0;
     width: 100%;
+    max-width: 100%;
     box-sizing: border-box;
+    overflow-x: hidden;
+    background: 
+        linear-gradient(
+            to bottom, 
+            rgba(11, 15, 25, 0.95) 0%, 
+            rgba(11, 15, 25, 0.90) 50%, 
+            rgba(11, 15, 25, 0.95) 100%
+        ),
+        url('../images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Contact Section Mobile */
+.contact-section {
+    padding: 60px 0;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
     background: 
         linear-gradient(
             to bottom, 
@@ -130,6 +174,9 @@
 .section-header {
     margin: 0 auto 30px auto;
     padding: 0 10px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .section-header h2 {
@@ -146,6 +193,9 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .arrow-bridge {
@@ -160,6 +210,9 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 /* Projects Section */
@@ -167,22 +220,25 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
-/* Karty w sekcjach mobilnych (wspólne style) */
+/* Karty w sekcjach mobilnych */
 .comp-card,
 .skill-category,
-.project-card,
-.contact-container {
-    background: rgba(19, 27, 46, 0.75); /* Półprzezroczyste tło */
-    backdrop-filter: blur(12px);         /* Efekt rozmycia tła pod kartą */
-    -webkit-backdrop-filter: blur(12px); /* Wsparcie dla przeglądarki Safari */
-    border: 1px solid rgba(56, 189, 248, 0.2); /* Delikatna, spójna ramka */
+.project-card {
+    background: rgba(19, 27, 46, 0.75);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(56, 189, 248, 0.2);
     border-radius: 16px;
     padding: 24px 20px;
     box-sizing: border-box;
     width: 100%;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3); /* Dodatkowa głębia */
+    max-width: 100%;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
 .comp-card h3,
@@ -195,34 +251,86 @@
     margin-bottom: 10px;
 }
 
-/* Korekta wyglądu tekstu wewnątrz kart w Stacku */
 .skill-category .skill-chips, 
 .skill-category p,
 .comp-card ul {
     margin-top: 12px;
 }
 
-/* Contact Section */
+/* Contact Section Container & Form */
 .contact-container {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
+    background: rgba(19, 27, 46, 0.75) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    border: 1px solid rgba(56, 189, 248, 0.2) !important;
+    border-radius: 20px !important;
+    padding: 24px 16px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    margin: 0 auto !important;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 20px !important;
+    overflow: hidden !important;
 }
 
 .contact-text h2 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
 }
 
 .contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 15px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+.form-group {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: calc(100% - 8px) !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    margin-left: 4px !important;
+    display: block !important;
+}
+
+.contact-form button {
+    width: calc(100% - 8px) !important;
+    margin-left: 4px !important;
+    box-sizing: border-box !important;
 }
 
 /* Footer */
 .footer-content {
+    display: flex;
     flex-direction: column;
     text-align: center;
     gap: 15px;
     padding: 20px 16px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Numer telefonu – nie łam między cyframi na mobile */
+
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.contact-details span {
+    white-space: nowrap;
 }
