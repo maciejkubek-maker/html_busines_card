@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt 3: Cyfrowy Kiosk PDF i Automatyzacja Instrukcji (Excel & VBA / Industry 4.0) | Maciej Kubiak</title>
+    <link rel="stylesheet" href="../src/styles/main.css">
+    <link rel="stylesheet" href="../src/styles/desktop.css" media="(min-width: 768px)">
+    <link rel="stylesheet" href="../src/styles/mobile.css" media="(max-width: 767px)">
+    <link rel="stylesheet" href="../src/styles/projects.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .project-img-card img {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+            object-position: top center;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .project-img-card:nth-child(1) img {
+            object-position: center center;
+        }
+        .project-img-card img:hover {
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Mobile Header -->
+    <header class="mobile-nav-bar">
+        <div class="logo">CNC ➔ DATA</div>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+    <nav class="mobile-menu" id="mobileMenu">
+        <a href="../index.html#hero">Start</a>
+        <a href="../index.html#about">Transformacja</a>
+        <a href="../index.html#skills">Umiejętności</a>
+        <a href="../index.html#projects">Projekty</a>
+        <a href="../index.html#contact">Kontakt</a>
+    </nav>
+
+    <main class="main-container">
+        <section class="project-detail-section">
+            <div class="project-inner-container">
+                <a href="../index.html#projects" class="back-link">← Wróć do portfolio</a>
+                
+                <div class="project-layout">
+                    <!-- LEWA STRONA: Tekst, Opis, Rezultaty -->
+                    <div class="project-text-column">
+                        <span class="project-meta-tag">Excel • VBA • Automatyzacja Procesów • SharePoint • Industry 4.0</span>
+                        <h1>Od pożaru fabryki i „VBA dla bystrzaków” do cyfrowego kiosku PDF</h1>
+                        
+                        <p>
+                            Autorski system automatyzacji procesów i zarządzania dokumentacją, który powstał w trakcie 3-tygodniowego przestoju spowodowanego pożarem w sąsiedztwie (wspólne media). Zamiast bezczynnie czekać, zbudowałem zintegrowany ekosystem VBA, zastępujący archaiczne metody pracy i obsługujący ponad 4000 dokumentów na SharePoint.
+                        </p>
+
+                        <div class="metrics-grid">
+                            <div class="metric-card">
+                                <div class="metric-value">90 000 PLN</div>
+                                <div class="metric-label">Wycena zewnętrzna zaoszczędzona dzięki wdrożeniu in-house</div>
+                            </div>
+                            <div class="metric-card">
+                                <div class="metric-value">4000+</div>
+                                <div class="metric-label">Dokumentów SharePoint przeszukiwanych automatycznie</div>
+                            </div>
+                        </div>
+
+                        <h3>Wyzwanie inżynieryjne i stan wyjściowy</h3>
+                        <p>
+                            Pożar sąsiadującego zakładu i odcięcie mediów zatrzymały produkcję na 3 tygodnie. Sytuacja obnażyła kruchość dotychczasowych procesów: przed audytami masowo przedrukowywano papierowe instrukcje, co generowało chaos i marnotrawstwo. Ręczne szukanie dokumentacji, walka z ciężkimi plikami Excela oraz zmiana brandingu po zmianach właścicielskich paraliżowały dział techniczny. Wykorzystując literaturową klasykę („VBA dla bystrzaków”, Biblia Excela) oraz fora, stworzyłem cyfrowy kiosk umożliwiający m.in. wygodne wyświetlanie jednej lub dwóch stron PDF bezpośrednio w programie. Prezentowane zdjęcia mają charakter poglądowy – ze względu na zachowanie poufności (NDA) nie pokazuję pełnych instrukcji.
+                        </p>
+
+                        <h3>Architektura rozwiązania i stos technologiczny</h3>
+                        <ul>
+                            <li><strong>Cyfrowy Kiosk dla Operatorów (UserForm):</strong> Panel startowy na stanowisku roboczym, zapewniający błyskawiczny podgląd dokumentacji z opcją wyświetlania 1 lub 2 stron PDF w programie.</li>
+                            <li><strong>Zaawansowany moduł wyszukiwania i filtracji:</strong> Dynamiczne wyszukiwanie po ID maszyny, ID dokumentu lub po treści – wyniki same się zacieśniają w formie wybieranych list (np. gniazda produkcyjne DW0544 KADIA, instrukcje kontrolne IK, specyfikacje maszyn DMC 60H, szlifierki DDS).</li>
+                            <li><strong>Moduł dla technologa:</strong> Dedykowany, osobny moduł usprawniający codzienną pracę technologów i zarządzanie bazą danych.</li>
+                            <li><strong>Automatyzacja SharePoint & Masowy Rebranding:</strong> Skrypty VBA radzące sobie z przeszukiwaniem 4000+ plików oraz seryjną podmianą logo i nagłówków po przekształceniach gospodarczych w kilka minut (eliminacja masowego przedruku przed audytami).</li>
+                            <li><strong>Automatyzacja raportowania kosztowego:</strong> Web scraping portalu dostawcy, pobieranie danych, generowanie tabel przestawnych i automatyczna wysyłka zestawień przez Outlooka.</li>
+                        </ul>
+
+                        <h3>Rezultaty biznesowe</h3>
+                        <p>
+                            Zewnętrzny dostawca wycenił podobny cyfrowy kiosk na 90 000 PLN. Narzędzie powstało całkowicie in-house w trudnych warunkach kryzysowych. Zlikwidowano chaos dokumentacyjny, powstrzymano masowe przedruki papierowe przed audytami, skrócono czas przygotowań i wdrożono standardy zgodne z Industry 4.0.
+                        </p>
+                    </div>
+
+                    <!-- PRAWA STRONA: Wizualizacje i diagramy -->
+                    <div class="project-images-column">
+                        <div class="project-img-card">
+                            <img src="../src/images/proj3_2.jpg" alt="Panel startowy UserForm w Excelu" onclick="openModal(this.src)">
+                            <div class="img-caption">Rys. 1: Interfejs graficzny UserForm – Panel startowy cyfrowego kiosku PDF dla operatorów na hali produkcyjnej.</div>
+                        </div>
+                        
+                        <div class="project-img-card">
+                            <img src="../src/images/proj3_1.jpg" alt="Ekran główny aplikacji z wyszukiwaniem instrukcji" onclick="openModal(this.src)">
+                            <div class="img-caption">Rys. 2: Główny arkusz aplikacji – zarządzanie gniazdami (np. DW0544 KADIA), filtrowanie typów dokumentów i podgląd PDF.</div>
+                        </div>
+
+                        <div class="project-img-card">
+                            <img src="../src/images/proj3_3.jpg" alt="Literatura źródłowa i książki o VBA i Excelu" onclick="openModal(this.src)">
+                            <div class="img-caption">Rys. 3: Fundamenty wiedzy – literatura (Biblia Excela, VBA dla bystrzaków), z której czerpano inspiracje do budowy systemu.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 • Przebranżowienie CNC ➔ Data Analyst & Python Dev. Wszelkie prawa zastrzeżone.</p>
+            <div class="socials">
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                <a href="https://github.com" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../src/js/main.js"></script>
+    
+    <div id="imageModal" class="image-modal" onclick="closeModal()">
+        <span class="modal-close">&times;</span>
+        <img class="modal-content" id="modalImg" alt="Powiększony podgląd">
+    </div>
+</body>
+</html>
