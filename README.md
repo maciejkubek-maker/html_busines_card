@@ -1,23 +1,30 @@
-# CNC to Data Analyst | Portfolio
+CNC to Data Analyst | Portfolio
 
-A personal portfolio website showcasing my career transition from a CNC machine operator and manufacturing engineer (10+ years of experience) to a Data Analyst and Python Developer. 
+A personal portfolio website showcasing my career transition from a CNC Process Engineer (14+ years of experience) to a Data Analyst and Python Developer.
 
-## 🚀 Tech Stack
+🚀 Tech Stack & Features
 
-* **Frontend:** HTML5, CSS3 (Responsive Design with Media Queries), JavaScript (Vanilla)
-* **Design & Layout:** Modern glassmorphism/terminal aesthetics, mobile-first navigation (hamburger menu)
-* **Core Skills Highlighted:** Python (Pandas, NumPy, FastAPI), SQL, Power BI, Data Cleaning, and Process Optimization
+    Frontend: HTML5, CSS3 (Responsive Design with Media Queries), JavaScript (Vanilla)
 
-## 📂 Project Structure
+    Design & Layout: Modern glassmorphism/terminal aesthetics, mobile-first navigation (hamburger menu)
 
-```text
+    Backend Integration: Formspree contact form integration for direct communication
+
+    Core Skills Highlighted: Python (Pandas, NumPy, FastAPI), SQL, Power BI, Excel VBA, Data Cleaning, and Process Optimization
+
+📂 Project Structure
+Plaintext
+
 html_busines_card/
 │
 ├── index.html          # Main entry point
+├── projects/           # Detailed project subpages (1, 2, 3)
 └── src/
+    ├── images/         # Visual assets & mockups
     ├── js/
-    │   └── main.js     # Interactive elements and scripts
+    │   └── main.js     # Interactive elements, mobile menu, and modals
     └── styles/
         ├── main.css    # Core styles and variables
         ├── desktop.css # Desktop-specific layouts
-        └── mobile.css  # Mobile and tablet responsiveness
+        ├── mobile.css  # Mobile and tablet responsiveness
+        └── projects.css# Subpages layout styling
